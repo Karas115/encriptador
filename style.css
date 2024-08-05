@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root
+{
+    --color_primario: #F8EDE3;
+    --color_secundario: #DFD3C3;
+    --color_entrada: #8D493A;
+    --color_salida:#D0B8A8;
+}
+*
+{
+    background-color: var(--color_primario);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.body
+{
+    box-sizing: border-box;
+    /*width: 1440px;
+    height: 1024px;*/
+}
+.logoa
+{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 120px;
+    height: 48px;
+}
+.inicio 
+{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+.inicio__cajas
+{
+    display: block;
+    /*width: 1057px;
+    height: 1000px;*/
+}
+.txt__entrada
+{
+    /*position: absolute;*/
+    margin-left: 140px;
+    margin-top: 168px;
+    width: 656px;
+    height: 612px;
+    border: none;
+    background-color:var(--color_primario);
+    text-transform: lowercase;
+}
+::placeholder 
+{    color:#8D493A;}
+.txt__entrada:focus{outline: none;}
+
+.salida
+{
+    display: flex;
+    padding: 2%;
+}
+.inicio__salida
+{
+    padding: 2px 2px 2px 2px;
+    margin: 2px;
+    display: block;
+}
+.inicio__salida_texto
+{
+    background-color: var(--color_salida);
+    background-image: url("../imagenes/muneco.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 32px;
+    margin-left: auto;
+    width: 400px;
+    height: 844px;
+    padding-left: 20px;
+    position: absolute;
+}
+.inicio__salida_texto:focus{outline: none;}
+.inicio__salida__noencontrado
+{
+    margin-left: 0px;
+    margin-top: 450px;
+    width: 400px;
+    height: 78px;
+    padding-left: 20px;
+    position: absolute;
+    order: 0;
+    border: none;
+    background-color: var(--color_salida);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.inicio__salida__ingrese
+{
+    margin-left: 0px;
+    margin-top: 550px;
+    width: 400px;
+    height: 78px;
+    padding-left: 20px;
+    position: absolute;
+    order: 1;
+    border: none;
+    background-color: var(--color_salida);
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+}
+.aviso
+{
+    display: flex;
+    justify-content:left;
+    padding: 0px;
+}
+.exclamacion
+{
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
+    margin-top: 1px;
+}
+.exclamacion_mensaje
+{
+    font-size: 16px;
+    font-style: normal;
+    margin-left: 24px;
+    margin-top: 0px;
+}
+.botones
+{
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+}
+.botones__encriptar
+{
+    background-color: var(--color_entrada);
+    border-radius: 24px;
+    color: beige;
+    width: 328px;
+    height: 65px;
+    border: none;
+}
+.botones__desencriptar
+{
+    background-color: var(--color_salida);
+    border-radius: 24px;
+    width: 328px;
+    height: 65px;
+    color: #8D493A;   
+    border: none;
+}
+.copiar
+{
+    border-radius: 24px;
+    color: beige;
+    width: 336px;
+    height: 67px;
+    margin-left: 40px;
+    margin-top: 785px;
+    position: absolute;
+    background-color: var(--color_entrada);
+    border: none;
+}
+.footer
+{
+    font-family:'Courier New';
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width:481px) and (max-width:768px)
+{
+    .inicio
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8%;
+    }
+    .txt__entrada
+    {
+        width: 688px;
+        height: 436px;
+        margin-left: 40px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .salida
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inicio__salida
+    {
+        padding: 2px 2px 2px 2px;
+        margin: 2px;
+    }
+    .inicio__salida_texto
+    {
+        gap: 7%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        margin-left:0px;
+        margin-top: 50px;
+    }
+    .botones
+    {
+        display: flex;
+        justify-content: center;
+        gap: 8%;
+    }
+    .copiar
+    {
+        
+        justify-content: center;
+        margin-left:50px;
+        margin-top: 680px;
+        gap: 7%;
+        
+    }
+    .inicio__salida__noencontrado
+    {
+        margin-left: 0px;
+        margin-top: 100px;
+        order: 0;       
+        gap: 6%;
+    }
+    .inicio__salida__ingrese
+    {
+        margin-left: 0px;
+        margin-top: 200px;
+        order: 1;
+        gap: 6%;
+       
+    }
+    .footer
+    {
+        gap: 16%;
+        margin-top: 900px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width:320px) and (max-width:480px)
+{
+    .inicio
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .txt__entrada
+    {
+        width: 688px;
+        height: 436px;
+        margin-left: 40px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .salida
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inicio__salida
+    {
+        padding: 2px 2px 2px 2px;
+        margin: 2px;
+    }
+    .inicio__salida_texto
+    {
+        gap: 8%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        margin-left:0px;
+        margin-top: 50px;
+    }
+    .botones
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 7%;
+    }
+    .copiar
+    {
+        
+        justify-content: center;
+        margin-left:40px;
+        margin-top: 480px;
+        gap: 6%;
+        
+    }
+    .inicio__salida__noencontrado
+    {
+        margin-left: 0px;
+        margin-top: 100px;
+        order: 0;       
+        gap: 6%;
+    }
+    .inicio__salida__ingrese
+    {
+        margin-left: 0px;
+        margin-top: 200px;
+        order: 1;
+        gap: 6%;
+       
+    }
+    .footer
+    {
+        gap: 16%;
+        margin-top: 900px;
+        display: flex;
+        justify-content: center;
+    }
+}
