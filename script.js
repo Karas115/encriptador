@@ -54,10 +54,10 @@ function desencriptar (stringDesencriptada)
     let nopermitido = ['á','é','í','ó','ú'];
     for (let i = 0; i< matrizcodigo.length; i++)
     {
-        if(stringEncriptada.includes(nopermitido[i]))
+        if(stringDesencriptada.includes(nopermitido[i]))
         {
                 alert("No se permiten acentos.");
-                stringEncriptada="";
+                stringDesencriptada="";
                 break;
         }
         else
