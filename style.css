@@ -68,7 +68,7 @@
 .inicio__salida_texto
 {
     background-color: var(--color_salida);
-    background-image: url("../imagenes/muneco.png");
+    background-image: url("../imágenes/muneco.png");
     background-position: top;
     background-repeat: no-repeat;
     border: none;
